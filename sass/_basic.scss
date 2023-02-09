@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+@font-face{
+    font-family: InterBlack;
+    src: url(../fonts/Inter-Black.ttf);
+}
+@font-face{
+    font-family: InterBold;
+    src: url(../fonts/Inter-Bold.ttf);
+}
+@font-face{
+    font-family: InterRegular;
+    src: url(../fonts/Inter-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #fff;
+    --secondary: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;  
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8)  0%,rgba(0, 0, 0, 0)  100%), url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+    .nav a{
+        color: var(--primary);
+        font-size: 1.125rem;
+        font-family: InterRegular;
+        line-height: 22px;
+        font-weight: 400;
+    }
+    .nav a:hover{
+       color: gold;
+       transform: scale(1.160);
+     }
+    nav {
+        display: flex;
+        gap: 25px;
+    }
+}
+
+.content{
+    h1{
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 49px;
+        margin-top: 20vh;
+        color: var(--primary);
+    }
+    .big{
+        font-size: 5.6rem;
+        font-weight: 900;
+        line-height: 109px;
+    }
+    nav{
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .button{
+        display: inline-block;
+        padding: 15px 50px;
+        border-radius: 25px;
+        border: 1px solid var(--primary);
+        font-size: 1.125rem;
+        font-family: InterBold;
+        font-weight: 700;
+        line-height: 22px;
+        color: var(--primary);
+    }
+    .button:hover{
+        background-color: var(--primary);
+        transition: all .2s linear;
+        color: var(--secondary);
+    }
+}
+
+.icons {
+    display: flex;
+    gap: 25px;
+}
+
+.about-the-event-containers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0;
+    gap: 60px;
+    h2{
+        font-size: 2.25rem;
+        font-family: InterBold;
+        font-weight: 700;
+        line-height: 44px;
+        
+    }
+    .button2{
+        display: inline-block;
+        padding: 15px 50px;
+        color: var(--primary);
+        background-color: var(--secondary);
+        border-radius: 25px;
+        font-size: 1.125rem;
+        font-family: InterBold;
+        line-height: 22px;
+        font-weight: 700;
+    }    
+}
+p{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 25px;
+    padding: 25px 0;
+    font-size: 1.125rem;
+    font-family: InterRegular;
+    font-weight: 400;
+    line-height: 22px;
+    span{
+        display: flex;
+        gap: 25px;
+    }
+}
+
+
+.about-containers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0;
+    gap: 110px;
+    h2{
+        text-align: right;
+        font-size: 2.25rem;
+        font-family: InterBold;
+        font-weight: 700;
+        line-height: 44px;
+    }
+    p{
+        font-size: 1.125rem;
+        font-family: InterRegular;
+        font-weight: 400;
+        line-height: 22px;
+    }
+}
+
+.connection-containers{
+    h1{ 
+        text-align: center;
+        padding: 35px 0;
+        font-size: 1.375rem;
+        font-weight: 700;
+        line-height: 27px;
+        .big2{
+            font-size: 2.25rem;
+              font-weight: 700;
+            line-height: 44px;
+        }
+    }
+    .connection-look{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 37.5px;
+        .icons{
+            display: flex;
+            gap: 37.5px;
+        }
+        .numbers{
+            display: flex;
+            gap: 25px;
+            p{
+                font-size: 1.375rem;
+                font-weight: 700;
+                line-height: 27px;
+            }
+        }
+    }
+}
+
+.quest-ans-containers{
+    display: flex;
+    flex-direction: column;
+    gap:  40px;
+    padding:100px 0;
+    .question-box{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 1.4px 1.4px 0px 1.4px #C5C5C5;
+        border-radius: 25px;
+        padding: 0 35px;
+        button{
+            font-size: 1.375rem;
+            font-family: InterRegular;
+            font-weight: 400;
+            background: transparent;
+            border: none;
+        }
+        p{
+            font-size: 1.437rem;
+        }
+    }
+    .answer-box{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transition: all .2s linear;
+        box-shadow: 1.4px 1.4px 1px 1.4px #C5C5C5;
+        border-radius: 25px;
+        padding: 10px 30px;
+        gap: 20px;
+        .answer-exit{
+            width: 95%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #000 ;
+            transition: all .4s linear;
+        }
+        button{
+            font-size: 1.375rem;
+            font-family: InterRegular;
+            font-weight: 400;
+            background: transparent;
+            border: none;
+        }
+        span{
+            font-size: 1.125rem;
+            padding: 0 10px;
+        }
+    }
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8)  0%,rgba(0, 0, 0, 0)  100%), url('/images/Rectangle\ 3.png');
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+    .footer-containers{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: .75rem;
+        font-family: InterRegular;
+        font-weight: 400;
+        color: var(--primary);
+        div{
+            display: flex;
+            gap: 12.5px;
+        }
+    }
+}
+
+@media(min-width: 660px){
+    .hamburger-menu{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+}

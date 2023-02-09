@@ -1,0 +1,23 @@
+@media(max-width: 560px){
+    .container{
+        max-width: 360px;
+    }
+    .content{
+        h1{
+            font-size: 1.625rem;
+            line-height: 27.7px;
+        }
+        .big{
+            font-size: 3.2rem;
+            line-height: 53.26px;
+        }
+    }
+    .connection-containers{
+        h1{
+            font-size: 1.125rem;
+        }
+        .big2{
+            font-size: 1.75rem;
+        }
+    }
+}
